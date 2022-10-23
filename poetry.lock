@@ -1,0 +1,193 @@
+[[package]]
+name = "font-v"
+version = "1.0.5"
+description = "Font version reporting and modification tool"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+fonttools = "*"
+gitpython = "*"
+
+[[package]]
+name = "fonttools"
+version = "4.17.0"
+description = "Tools to manipulate font files"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+all = ["brotli (>=1.0.1)", "brotlipy (>=0.7.0)", "fs (>=2.2.0,<3)", "lxml (>=4.0,<5)", "lz4 (>=1.7.4.2)", "matplotlib", "munkres", "scipy", "skia-pathops (>=0.5.0)", "sympy", "unicodedata2 (>=13.0.0)", "xattr", "zopfli (>=0.1.4)"]
+graphite = ["lz4 (>=1.7.4.2)"]
+interpolatable = ["munkres", "scipy"]
+lxml = ["lxml (>=4.0,<5)"]
+pathops = ["skia-pathops (>=0.5.0)"]
+plot = ["matplotlib"]
+symfont = ["sympy"]
+type1 = ["xattr"]
+ufo = ["fs (>=2.2.0,<3)"]
+unicode = ["unicodedata2 (>=13.0.0)"]
+woff = ["brotli (>=1.0.1)", "brotlipy (>=0.7.0)", "zopfli (>=0.1.4)"]
+
+[[package]]
+name = "gitdb"
+version = "4.0.9"
+description = "Git Object Database"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+smmap = ">=3.0.1,<6"
+
+[[package]]
+name = "gitpython"
+version = "3.1.29"
+description = "GitPython is a python library used to interact with Git repositories"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+gitdb = ">=4.0.1,<5"
+
+[[package]]
+name = "opentype-feature-freezer"
+version = "1.32.2"
+description = "Turns OpenType features 'on' by default in a font: reassigns the font's Unicode-to-glyph mapping fo permanently 'freeze' the 1-to-1 substitution features, and creates a new font."
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[package.dependencies]
+fonttools = ">=4.0,<5.0"
+
+[[package]]
+name = "pyyaml"
+version = "5.4.1"
+description = "YAML parser and emitter for Python"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+
+[[package]]
+name = "skia-pathops"
+version = "0.7.0"
+description = "Python access to operations on paths using the Skia library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+testing = ["coverage", "pytest", "pytest-randomly", "pytest-xdist"]
+
+[[package]]
+name = "smmap"
+version = "5.0.0"
+description = "A pure Python implementation of a sliding window memory map manager"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "ttfautohint-py"
+version = "0.5.1"
+description = "Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "76fdc400938c5f38f4235bcce79d3b4f463ae34805e77ff46e87adfd8187ec11"
+
+[metadata.files]
+font-v = [
+    {file = "font-v-1.0.5.tar.gz", hash = "sha256:561f4adca51f1f5a7bb2c558da04e7c35fb9f40ffba9020ecf8c06168e153c5d"},
+    {file = "font_v-1.0.5-py3-none-any.whl", hash = "sha256:5542d83656be4bd5cf44da2512fef99ba376788345a06bbba5a0d8dda6034351"},
+]
+fonttools = [
+    {file = "fonttools-4.17.0-py3-none-any.whl", hash = "sha256:dd612abe9a92769e1bd7a8b22bdb12f161c8892f97cf5b9cc1ca64786fbf39ef"},
+    {file = "fonttools-4.17.0.zip", hash = "sha256:5773ceed7e4a18b26c03888b148066afb13ad830e5afd3509d3c282f01dcda4c"},
+]
+gitdb = [
+    {file = "gitdb-4.0.9-py3-none-any.whl", hash = "sha256:8033ad4e853066ba6ca92050b9df2f89301b8fc8bf7e9324d412a63f8bf1a8fd"},
+    {file = "gitdb-4.0.9.tar.gz", hash = "sha256:bac2fd45c0a1c9cf619e63a90d62bdc63892ef92387424b855792a6cabe789aa"},
+]
+gitpython = [
+    {file = "GitPython-3.1.29-py3-none-any.whl", hash = "sha256:41eea0deec2deea139b459ac03656f0dd28fc4a3387240ec1d3c259a2c47850f"},
+    {file = "GitPython-3.1.29.tar.gz", hash = "sha256:cc36bfc4a3f913e66805a28e84703e419d9c264c1077e537b54f0e1af85dbefd"},
+]
+opentype-feature-freezer = [
+    {file = "opentype-feature-freezer-1.32.2.tar.gz", hash = "sha256:cdc93320bfee4e2f1455476f2b5618d82f47c0d86532f1b69673666adcc2b573"},
+    {file = "opentype_feature_freezer-1.32.2-py3-none-any.whl", hash = "sha256:e49b98c7ab37c8fe75d838319cbc0f4769a06536ec039633f1cded39b813a055"},
+]
+pyyaml = [
+    {file = "PyYAML-5.4.1-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:3b2b1824fe7112845700f815ff6a489360226a5609b96ec2190a45e62a9fc922"},
+    {file = "PyYAML-5.4.1-cp27-cp27m-win32.whl", hash = "sha256:129def1b7c1bf22faffd67b8f3724645203b79d8f4cc81f674654d9902cb4393"},
+    {file = "PyYAML-5.4.1-cp27-cp27m-win_amd64.whl", hash = "sha256:4465124ef1b18d9ace298060f4eccc64b0850899ac4ac53294547536533800c8"},
+    {file = "PyYAML-5.4.1-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:bb4191dfc9306777bc594117aee052446b3fa88737cd13b7188d0e7aa8162185"},
+    {file = "PyYAML-5.4.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:6c78645d400265a062508ae399b60b8c167bf003db364ecb26dcab2bda048253"},
+    {file = "PyYAML-5.4.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:4e0583d24c881e14342eaf4ec5fbc97f934b999a6828693a99157fde912540cc"},
+    {file = "PyYAML-5.4.1-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:72a01f726a9c7851ca9bfad6fd09ca4e090a023c00945ea05ba1638c09dc3347"},
+    {file = "PyYAML-5.4.1-cp36-cp36m-manylinux2014_s390x.whl", hash = "sha256:895f61ef02e8fed38159bb70f7e100e00f471eae2bc838cd0f4ebb21e28f8541"},
+    {file = "PyYAML-5.4.1-cp36-cp36m-win32.whl", hash = "sha256:3bd0e463264cf257d1ffd2e40223b197271046d09dadf73a0fe82b9c1fc385a5"},
+    {file = "PyYAML-5.4.1-cp36-cp36m-win_amd64.whl", hash = "sha256:e4fac90784481d221a8e4b1162afa7c47ed953be40d31ab4629ae917510051df"},
+    {file = "PyYAML-5.4.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:5accb17103e43963b80e6f837831f38d314a0495500067cb25afab2e8d7a4018"},
+    {file = "PyYAML-5.4.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:e1d4970ea66be07ae37a3c2e48b5ec63f7ba6804bdddfdbd3cfd954d25a82e63"},
+    {file = "PyYAML-5.4.1-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:cb333c16912324fd5f769fff6bc5de372e9e7a202247b48870bc251ed40239aa"},
+    {file = "PyYAML-5.4.1-cp37-cp37m-manylinux2014_s390x.whl", hash = "sha256:fe69978f3f768926cfa37b867e3843918e012cf83f680806599ddce33c2c68b0"},
+    {file = "PyYAML-5.4.1-cp37-cp37m-win32.whl", hash = "sha256:dd5de0646207f053eb0d6c74ae45ba98c3395a571a2891858e87df7c9b9bd51b"},
+    {file = "PyYAML-5.4.1-cp37-cp37m-win_amd64.whl", hash = "sha256:08682f6b72c722394747bddaf0aa62277e02557c0fd1c42cb853016a38f8dedf"},
+    {file = "PyYAML-5.4.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:d2d9808ea7b4af864f35ea216be506ecec180628aced0704e34aca0b040ffe46"},
+    {file = "PyYAML-5.4.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:8c1be557ee92a20f184922c7b6424e8ab6691788e6d86137c5d93c1a6ec1b8fb"},
+    {file = "PyYAML-5.4.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:fd7f6999a8070df521b6384004ef42833b9bd62cfee11a09bda1079b4b704247"},
+    {file = "PyYAML-5.4.1-cp38-cp38-manylinux2014_s390x.whl", hash = "sha256:bfb51918d4ff3d77c1c856a9699f8492c612cde32fd3bcd344af9be34999bfdc"},
+    {file = "PyYAML-5.4.1-cp38-cp38-win32.whl", hash = "sha256:fa5ae20527d8e831e8230cbffd9f8fe952815b2b7dae6ffec25318803a7528fc"},
+    {file = "PyYAML-5.4.1-cp38-cp38-win_amd64.whl", hash = "sha256:0f5f5786c0e09baddcd8b4b45f20a7b5d61a7e7e99846e3c799b05c7c53fa696"},
+    {file = "PyYAML-5.4.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:294db365efa064d00b8d1ef65d8ea2c3426ac366c0c4368d930bf1c5fb497f77"},
+    {file = "PyYAML-5.4.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:74c1485f7707cf707a7aef42ef6322b8f97921bd89be2ab6317fd782c2d53183"},
+    {file = "PyYAML-5.4.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:d483ad4e639292c90170eb6f7783ad19490e7a8defb3e46f97dfe4bacae89122"},
+    {file = "PyYAML-5.4.1-cp39-cp39-manylinux2014_s390x.whl", hash = "sha256:fdc842473cd33f45ff6bce46aea678a54e3d21f1b61a7750ce3c498eedfe25d6"},
+    {file = "PyYAML-5.4.1-cp39-cp39-win32.whl", hash = "sha256:49d4cdd9065b9b6e206d0595fee27a96b5dd22618e7520c33204a4a3239d5b10"},
+    {file = "PyYAML-5.4.1-cp39-cp39-win_amd64.whl", hash = "sha256:c20cfa2d49991c8b4147af39859b167664f2ad4561704ee74c1de03318e898db"},
+    {file = "PyYAML-5.4.1.tar.gz", hash = "sha256:607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"},
+]
+skia-pathops = [
+    {file = "skia-pathops-0.7.0.zip", hash = "sha256:41129b537789afe2f1b93f6f43e4a058cd1dff58045a7e5616ad5cbdb80cd54d"},
+    {file = "skia_pathops-0.7.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:1dd843c502a9fd40a29f1bd4c3de15885d2aeb9069a8fbae9352d8708c24220a"},
+    {file = "skia_pathops-0.7.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:ff352a129f20dbeec0ce7042eb01c74648ba53bcd764fcac80e6d49920530329"},
+    {file = "skia_pathops-0.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9ea3c34c043cf27a40dde456944dc06334a7e1d1445599373ea2fc8dfdfd78e0"},
+    {file = "skia_pathops-0.7.0-cp310-cp310-win32.whl", hash = "sha256:909be1de67259d3327df7aa78643d240005f97c8dad0c4044428e80e1a78abae"},
+    {file = "skia_pathops-0.7.0-cp310-cp310-win_amd64.whl", hash = "sha256:3a84b3c6bffe4f73e8222f4115dd4ad28192f650f2b31b83719767dc724f0e2e"},
+    {file = "skia_pathops-0.7.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:d375a4fd97398766f911129252995ed4477a7b61efae8d22f9fb6a150bc1d5cb"},
+    {file = "skia_pathops-0.7.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fbef3aad63b4874655f7edc221776efaa415fc5e57b6299b1c75d2e1a578c2f7"},
+    {file = "skia_pathops-0.7.0-cp37-cp37m-win32.whl", hash = "sha256:78470813432a314d83a7d2e5a28d74897f3ffa776fdd31319d8bf2465c383e3a"},
+    {file = "skia_pathops-0.7.0-cp37-cp37m-win_amd64.whl", hash = "sha256:48eac87886ec70c89c6af686c0777196bfc5f36980b45c67fee5a888e05b36e4"},
+    {file = "skia_pathops-0.7.0-cp38-cp38-macosx_10_9_universal2.whl", hash = "sha256:da19b48d5dbfd5f955bcf7365bc551c7c5b17df977e3045a4c84c5fc13805bdd"},
+    {file = "skia_pathops-0.7.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:f1a7a61c1ebb6b23b37ce6c8ac3752a218e822d66c9e6c633f875efdb58f7403"},
+    {file = "skia_pathops-0.7.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b09401aa0bda611806dc8b4c965c45c39d05bd5a71e16af3468683fe0ec19184"},
+    {file = "skia_pathops-0.7.0-cp38-cp38-win32.whl", hash = "sha256:f2d5a39d6e23206f801be3c9d0f06279ef90f62b70822781408e75b41a3b3d4d"},
+    {file = "skia_pathops-0.7.0-cp38-cp38-win_amd64.whl", hash = "sha256:3e0946ea5a2a9f404961991531eb20181ca6c2f1f3b8dfffd82e25634709db71"},
+    {file = "skia_pathops-0.7.0-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:d8cef9fffa1fa69e51e4fcfd12a1a8f3778860a680b443961ec34a9f9f54f9ee"},
+    {file = "skia_pathops-0.7.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:0b29dba52484aafd998563b5534944a3a4e50d30c5e8e67a1e1a36b9be6f7dac"},
+    {file = "skia_pathops-0.7.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f88a25860935c43bedb9748645c04d6189fb14cf79316a23bc65577e9764b3c8"},
+    {file = "skia_pathops-0.7.0-cp39-cp39-win32.whl", hash = "sha256:05b3ecd63062ce5b5bc696c069f368743fb7a7d9846ae8f4b47176643a23a4bc"},
+    {file = "skia_pathops-0.7.0-cp39-cp39-win_amd64.whl", hash = "sha256:352377c9950fabedc6d80cd277a8845ada610fc5abc3b9ad5518419585919f54"},
+    {file = "skia_pathops-0.7.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f63221ab48cdead3f1939ebd86cdd0dd3f335caf447075ed9c068b14ee0e8718"},
+]
+smmap = [
+    {file = "smmap-5.0.0-py3-none-any.whl", hash = "sha256:2aba19d6a040e78d8b09de5c57e96207b09ed71d8e55ce0959eeee6c8e190d94"},
+    {file = "smmap-5.0.0.tar.gz", hash = "sha256:c840e62059cd3be204b0c9c9f74be2c09d5648eddd4580d9314c3ecde0b30936"},
+]
+ttfautohint-py = [
+    {file = "ttfautohint-py-0.5.1.tar.gz", hash = "sha256:d5e324e1437399ab3ed2ffeb68f8b3235d3ad151eefc8375a1c3a380f5fa94fa"},
+    {file = "ttfautohint_py-0.5.1-py2.py3-none-macosx_10_9_universal2.whl", hash = "sha256:1082907b33112f7734449f64ca49d5c3225a4c6a727034353885e596b1e0a0b0"},
+    {file = "ttfautohint_py-0.5.1-py2.py3-none-macosx_10_9_x86_64.whl", hash = "sha256:68414b2e507822f42db5660c9151815b30d81ffec5b322f4b2153ba531f883cb"},
+    {file = "ttfautohint_py-0.5.1-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5c65fe2fd3ee16d68201169c72413e70130d9f9d0b92589f9122d9f72a98d093"},
+    {file = "ttfautohint_py-0.5.1-py2.py3-none-win32.whl", hash = "sha256:16f713bbef44c31af1c64ef21f74605cbcd01b3e387c9c0a79b389203f030b9b"},
+    {file = "ttfautohint_py-0.5.1-py2.py3-none-win_amd64.whl", hash = "sha256:7010f6dff9a2fe0c4ae87b7a5f84d94fb44064377c3cbcf5e88786f5244ed6de"},
+]
